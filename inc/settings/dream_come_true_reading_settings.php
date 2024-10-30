@@ -1,0 +1,151 @@
+<?php
+
+function dhat_dream_come_true_reading_settings_init() {
+        add_settings_section(
+            'dream_come_true_reading_settings_section',
+            '',// Heading
+            '',
+            'dream-come-true-reading-settings'
+        );
+
+        register_setting(
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_card_field',
+            array(
+                'type' => 'string',
+                'sanitize_callback' => 'sanitize_text_field',
+                'default' => ''
+            )
+        );
+        add_settings_field(
+            'dream_come_true_reading_settings_card_field',
+            __( 'Card Image Style', 'horoscope-and-tarot' ),
+            'dhat_dct_settings_card_field_callback',
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_section'
+        );
+
+        register_setting(
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_text_color_field',
+            array(
+                'type' => 'string',
+                'sanitize_callback' => 'sanitize_text_field',
+                'default' => ''
+            )
+        );
+        add_settings_field(
+            'dream_come_true_reading_settings_text_color_field',
+            __( 'Text Color', 'horoscope-and-tarot' ),
+            'dhat_dct_settings_text_color_field_callback',
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_section'
+        );
+
+        register_setting(
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_font_size_field',
+            array(
+                'type' => 'integer',
+                'sanitize_callback' => 'sanitize_text_field',
+                'default' => '13'
+            )
+        );
+        add_settings_field(
+            'dream_come_true_reading_settings_font_size_field',
+            __( 'Font Size <br> (Default 13px)', 'horoscope-and-tarot' ),
+            'dhat_dct_settings_font_size_field_callback',
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_section'
+        );
+
+        register_setting(
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_theme_color_field',
+            array(
+                'type' => 'string',
+                'sanitize_callback' => 'sanitize_text_field',
+                'default' => ''
+            )
+        );
+        add_settings_field(
+            'dream_come_true_reading_settings_theme_color_field',
+            __( 'Theme Color', 'horoscope-and-tarot' ),
+            'dhat_dct_settings_theme_color_field_callback',
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_section'
+        );
+
+        register_setting(
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_category_color_field',
+            array(
+                'type' => 'string',
+                'sanitize_callback' => 'sanitize_text_field',
+                'default' => ''
+            )
+        );
+        add_settings_field(
+            'dream_come_true_reading_settings_category_color_field',
+            __( 'Button Text Color', 'horoscope-and-tarot' ),
+            'dhat_dct_settings_category_color_field_callback',
+            'dream-come-true-reading-settings',
+            'dream_come_true_reading_settings_section'
+        );
+}
+
+add_action( 'admin_init', 'dhat_dream_come_true_reading_settings_init' );
+
+
+function dhat_dct_settings_card_field_callback() {
+    $dream_come_true_reading_settings_card_field = get_option('dream_come_true_reading_settings_card_field');
+    ?>
+    <div class="divine__theme__card" id="divine-dct-card-input">
+        <label>
+            <input type="radio" name="dream_come_true_reading_settings_card_field" value="1" <?= ($dream_come_true_reading_settings_card_field == 1 ? 'checked' : ''); ?>>
+            <img height="60" src="<?= DHAT_PLUGIN_URL.'admin/img/dct-1.jpg'; ?>">
+        </label>
+
+        <label>
+            <input type="radio" name="dream_come_true_reading_settings_card_field" value="2" <?= ($dream_come_true_reading_settings_card_field == 2 ? 'checked' : ''); ?>>
+            <img height="60" src="<?= DHAT_PLUGIN_URL.'admin/img/cdr-2.jpg'; ?>">
+        </label>
+
+        <label>
+            <input type="radio" name="dream_come_true_reading_settings_card_field" value="3" <?= ($dream_come_true_reading_settings_card_field == 3 ? 'checked' : ''); ?>>
+            <img height="60" src="<?= DHAT_PLUGIN_URL.'admin/img/dt.jpg'; ?>">
+        </label>
+    </div>  
+    <?php 
+}
+
+function dhat_dct_settings_text_color_field_callback() {
+    $dream_come_true_text_color_field = get_option('dream_come_true_reading_settings_text_color_field');
+    ?>
+    <input type="text" id="colorpicker-dct-1" name="dream_come_true_reading_settings_text_color_field" class="regular-text" value="<?php echo isset($dream_come_true_text_color_field) ? esc_attr( $dream_come_true_text_color_field ) : ''; ?>" required/>
+    <?php 
+}
+
+function dhat_dct_settings_theme_color_field_callback() {
+    $dream_come_true_theme_color_field = get_option('dream_come_true_reading_settings_theme_color_field');
+    ?>
+    <input type="text" id="colorpicker-dct-2" name="dream_come_true_reading_settings_theme_color_field" class="regular-text" value="<?php echo isset($dream_come_true_theme_color_field) ? esc_attr( $dream_come_true_theme_color_field ) : ''; ?>" required/>
+    <?php 
+}
+
+function dhat_dct_settings_category_color_field_callback() {
+    $dream_come_true_category_color_field = get_option('dream_come_true_reading_settings_category_color_field');
+    ?>
+    <input type="text" id="colorpicker-dct-3" name="dream_come_true_reading_settings_category_color_field" class="regular-text" value="<?php echo isset($dream_come_true_category_color_field) ? esc_attr( $dream_come_true_category_color_field ) : ''; ?>" required/>
+    <?php 
+}
+
+function dhat_dct_settings_font_size_field_callback() {
+    $dream_come_true_font_size_field = get_option('dream_come_true_reading_settings_font_size_field');
+    update_option('dream_come_true_reading_settings_font_size_field', $dream_come_true_font_size_field, false);
+    ?>
+    <input type="number" id="font-size-dct-1" name="dream_come_true_reading_settings_font_size_field" class="regular-text font_size_stt" value="<?php echo isset($dream_come_true_font_size_field) ? esc_attr( $dream_come_true_font_size_field ) : ''; ?>" required/>
+    <p class="divine__text__danger" style="display:none;" id="font-size-dct-1_err">Please enter valid font size</p>
+    <?php 
+}
+?>

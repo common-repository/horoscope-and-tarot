@@ -1,0 +1,195 @@
+:root {
+    --ia-text-color:#000;
+    --ia-theme-color:#D652BD;
+	--ia-background-color:rgba(241, 140, 70, 0.1);
+    --ia-category-color:#FFF;
+	--ia-font-size: 13px;
+}
+
+.divine__plugin__overlay {
+	background: rgba(0,0,0,0.2);
+	color: #000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: center;
+	padding-top: 20%;
+	opacity: 0.5;
+	font-size: 50px;
+	z-index: 100000;
+}
+.input-large{    
+	color: #000 !important;
+	border: 1px #ddd solid !important;
+    width: 100% !important;
+    border-radius: 2px !important;
+	padding: 0.6rem 1rem !important;
+    margin-bottom: 1rem !important;
+}
+select, .faux-dropdown {
+	color: #000 !important;
+    border-radius: 2px !important;
+    border: 1px #ddd solid !important;
+    background: #fcfcfc !important;
+    padding: 0.8rem 1rem !important;
+    width: 100% !important;
+    outline: 0 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+.tarot-deck label {
+	display: inline-block !important;
+    margin-bottom: 0.5rem !important;
+    width: 31.71%  !important;
+    margin-right: 1% !important;
+}
+.grid-3 {
+    grid-template-columns: repeat(3,minmax(27%,1fr)) !important;
+    margin-bottom: 1rem !important;
+}
+.tarot-deck {
+    margin-bottom: 2rem !important;
+    grid-gap: 2rem !important;
+    grid-template-columns: 1fr 4fr !important;
+}
+
+#which-animal-are-you .yellow-bg {
+    background: var(--ia-background-color) !important;
+    padding: 2rem 1rem !important;
+    margin-bottom: 2rem !important;
+}
+	.divine__ta__widget{
+		width: 100% !important;
+		border: 1px solid #ededed !important;
+		border-radius: 20px !important;
+		/*background: #eee !important;*/
+		margin: 2rem 0px !important;	
+		display: inline-block !important;
+	}
+
+	.divine__ta__widget h2:before{
+		display: none !important;
+	}
+	.divine__ta__cardname{
+		font-weight: 700 !important;
+		font-size: 19px !important;
+		margin-top: 20px !important;
+		color: var(--ia-text-color) !important;
+	}
+	.divine__ta__cardname h3{
+		color: var(--ia-text-color) !important;
+	}
+	.divine__ta__widget a:focus{
+		outline: none !important;
+		outline-style: none !important;
+		text-decoration: none !important;	
+	}
+
+	.divine__tia__heading{
+		margin: 1rem auto !important;
+		margin-top: 0.5rem !important;
+		font-size: 30px !important;
+		font-weight: 600 !important;
+		text-align: center !important;
+		
+	}
+
+
+	@media only screen and (min-width:0px) and (max-width:4000px) {
+		
+		.tarot-content.suits {
+			text-align: center !important;
+		}
+	}
+
+
+	.divine__tia__contentdata {
+		display: none;
+		padding: 6px 16px !important;
+		border-top: none !important;
+		text-align: center !important;
+		-webkit-animation: fadeEffect 1.25s !important;
+		animation: fadeEffect 1.25s !important;
+	}	
+
+	.divine__tia__contentdata p{
+		/* font-size: 0.9rem !important;     */
+		margin-top: 10px !important;
+		margin-bottom: 1em !important;
+		color: var(--ia-text-color) !important;
+		font-size: var(--ia-font-size) !important;
+	} 
+	#which-animal-are-you .divine__ta__background{
+		text-align: center !important;
+		padding-left: 16px !important;
+		margin-top: 25px !important;
+	}
+	#which-animal-are-you .divine__tia__heading {
+		color: var(--ia-text-color) !important;
+	}
+	#which-animal-are-you .divine__ta__resheading {
+		color: var(--ia-text-color) !important;
+	}
+	.divine__ta__changecard__btn{
+		color: var(--ia-category-color) !important;
+		background-color: var(--ia-theme-color) !important;
+		border-color: var(--ia-theme-color) !important;
+		padding: .375rem .75rem !important;
+		font-size: 16px !important;
+		line-height: 1.5 !important;
+		border-radius: .25rem !important;
+	}  
+	button.divine__ta__changecard__btn:hover {
+		background-color: var(--ia-theme-color) !important;
+		color: var(--ia-category-color) !important;
+		filter: brightness(110%) !important;
+	} 
+	img.ta__card__image{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		height: 18rem !important;
+	}
+
+	.center-cards {
+		align-items: center;
+	}
+	.flex-center-inline {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	@media only screen and (min-width: 0px) and (max-width: 767px){
+		.tarot-deck .center-cards>* {
+			width: auto !important;
+			max-height: 10rem !important;
+		}
+	}
+	@media only screen and (min-width: 0px) and (max-width: 767px){
+		.center-cards>* {
+			max-width: 6rem !important;
+		}
+		.tarot-deck label {
+			width: 31.29%  !important;
+		}
+	}
+	.center-cards>* {
+		display: block !important;
+		max-width: 10rem !important;
+		height: auto !important;
+		margin: 1rem 0.5rem !important;
+		cursor: pointer !important;
+	}
+	#TIACardImage {
+		width: 183px !important;
+		height: auto !important;
+	}
+	#which-animal-are-you .frm-label{
+		font-size: 18px !important;
+		color: var(--ia-text-color) !important;
+		margin-bottom: 8px !important;
+	}
+	

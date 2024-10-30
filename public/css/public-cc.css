@@ -1,0 +1,174 @@
+:root {
+    --cc-text-color:#000;
+    --cc-theme-color:#D652BD;
+    --cc-category-color:#FFF;
+    --cc-font-size: 13px;
+}
+.divine__cc__widget{
+     width: 100% !important;
+     border-radius: 20px !important;
+     padding: 20px 10px !important;
+     border: 1px solid #EDEDED !important;
+    margin: 2rem 0px !important;   
+}
+
+ .divine__cc__desc{
+     letter-spacing: 2px !important;
+     font-size: 0.9rem !important;
+     text-align: center !important;
+     color: var(--cc-text-color) !important;
+}
+.divine__cc__subtitle {
+    color: var(--cc-text-color) !important;
+}
+.divine-cc-present-result {
+    color: var(--cc-text-color) !important;
+}
+ .divine__cc__prev{
+     margin-top: 2rem !important;
+}
+ .divine__cc__select__row{
+     margin-top: 1rem !important;
+     margin-bottom: 1rem !important;
+     margin-left: 0px !important;
+     margin-right: 0px !important;
+}
+ .divine__cc__box{
+     margin-bottom: 1rem !important;
+     text-align: center !important;
+}
+ .divine__cc__btn__box{
+     text-align: center !important;
+}
+ .divine__cc__box:hover {
+     filter: grayscale(100%) !important;
+     padding-top: 10px !important;
+     padding-bottom: 10px !important;
+     border-radius: 10px !important;
+     box-shadow: 0px 10px 20px 5px rgb(0 0 0 / 10%) !important;
+}
+ .divine__cc__box.divine__cc__selected{
+     filter: grayscale(100%) !important;
+     padding-top: 10px !important;
+     padding-bottom: 10px !important;
+     border-radius: 10px !important;
+     box-shadow: 0px 15px 10px -5px rgb(0 0 0 / 10%) !important;
+}
+ .divine__cc__tabwrap{
+     background-color: var(--cc-theme-color) !important;
+     box-shadow: 0 5px 20px 0 rgb(0 0 0 / 20%), 0 13px 24px -11px rgb(135 135 135 / 60%) !important;
+     border-radius: 4px !important;
+     position: relative !important;
+     z-index: 99 !important;
+     margin: 0 auto !important;
+     width: 97% !important;
+}
+.divine__cc__title{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: var(--cc-text-color) !important;
+}
+.divine__cc__tablink{
+     display: flex !important;
+}
+ ul.divine__cc__tab {
+     list-style-type: none !important;
+     margin: 0 !important;
+     padding: 20px 15px !important;
+     overflow: hidden !important;
+}
+ ul.divine__cc__tab li {
+     float: left !important;
+}
+ ul.divine__cc__tab li::marker {
+     content: none !important;
+}
+ ul.divine__cc__tab li a {
+     display: inline-block !important;
+     color: var(--cc-category-color) !important;
+     text-align: center !important;
+     padding: 9px 16px !important;
+     text-decoration: none !important;
+     transition: 0.3s !important;
+     font-size: 16px !important;
+}
+ ul.divine__cc__tab li a:hover {
+    /*background-color: #0000FF;
+    */
+     background-color: hsla(0,0%,100%,.2);
+     transition: background-color .3s .2s !important;
+     border-radius: 5px !important;
+}
+ ul.divine__cc__tab li a:focus, .active {
+    /*background-color: #000099;
+    */
+    outline: none !important; 
+    background-color: hsla(0,0%,100%,.2) !important;
+    transition: background-color .3s .2s !important;
+    border-radius: 5px !important;
+}
+ .divine__cc__contentwrap{
+     margin-top: -50px !important;
+     background: transparent;
+    /*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    */
+     padding-top: 60px !important;
+     border-radius: 4px !important;
+     margin-bottom: 20px !important;
+}
+ .divine__cc__contentdata {
+     display: flex;
+     padding: 6px 16px;
+     border-top: none !important;
+     text-align: left !important;
+     -webkit-animation: fadeEffect 1.25s !important;
+     animation: fadeEffect 1.25s !important;
+}
+ .divine__cc__contentdata p{
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    color: var(--cc-text-color) !important;
+    font-size: var(--cc-font-size) !important;
+}
+.divine__cc__contentdata h3{
+    color: var(--cc-text-color) !important;
+}
+ @media only screen and (max-width: 600px) {
+     .divine__cc__contentdata{
+         display: grid;
+         padding: 5px 10px;
+    }
+     .divine__cc__result__image__box{
+         text-align: center !important;
+         margin-bottom: 10px !important;
+    }
+     .divine__cc__result__data__box{
+         padding-left: 0px !important;
+    }
+}
+ .divine__cc__result__image__box{
+     align-self: center !important;
+}
+ .divine__cc__result__data__box{
+     padding-left: 25px;
+     font-size: 0.9rem !important;
+}
+ .divine__cc__contentdata img{
+     min-width: 200px !important;
+     vertical-align: middle !important;
+}
+ .divine__cc__reset__btn{
+     color: var(--cc-category-color) !important;
+     background-color: var(--cc-theme-color) !important;
+     border-color: var(--cc-theme-color) !important;
+     padding: .375rem .75rem !important;
+     font-size: 16px !important;
+     line-height: 1.5 !important;
+     border-radius: .25rem !important;
+}
+ button.divine__cc__reset__btn:hover, button.divine__cc__reset__btn:focus {
+     background-color: var(--cc-theme-color) !important;
+     color: var(--cc-category-color) !important;
+     filter: brightness(110%) !important;
+}
+ 

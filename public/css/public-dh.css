@@ -1,0 +1,14 @@
+.divine__dh__signbox .divine__dh__sign {
+    padding: 0 !important;
+}
+@media only screen and (max-width: 500px) {
+    .divine-col.divine__dh__signbox {
+        flex: 33.33% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .divine-col.divine__dh__signbox {
+        flex: 33.33% !important;
+    }
+}

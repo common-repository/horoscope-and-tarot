@@ -1,0 +1,217 @@
+#myplugin_movie_dash_widget ul {
+    display: inline-block !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+#myplugin_movie_dash_widget ul li {
+    display: block !important;
+    width: 50% !important;
+    float: left !important;
+}
+
+.divine__plugin__tab__row button
+{
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.alert-info{
+	color: #17a2b8 !important;
+	margin-top: 15px !important;
+}
+
+.alert-danger{
+	color: red !important;
+	margin-top: 15px !important;
+	border: 1px solid !important;
+	width: fit-content !important;
+	padding: 5px 10px !important;
+	border-radius: 7px !important;	
+}
+
+.alert-success{
+	color: green !important;
+	margin-top: 15px !important;
+	border: 1px solid !important;
+	width: fit-content !important;
+	padding: 5px 10px !important;
+	border-radius: 7px !important;	
+}
+
+.divine__shortcode{
+	font-size: 16px !important;
+	color: #f44336!important;
+	background: white !important;
+}
+
+.divine__shortcode__sm{
+	font-size: 14px !important;
+	color: #D652BD!important;
+	background: white !important;
+}
+
+.divine__video__box{
+	margin-top: 1rem !important;
+	box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+	border: 10px solid #fff !important;
+}
+
+.divine__text__primary{
+    color: #007bff !important;
+}
+
+.divine__text__success{
+    color: #28a745 !important;
+}
+
+.divine__text__warning{
+    color: #17a2b8 !important;
+}
+
+.divine__text__danger{
+    color: #dc3545 !important;
+}
+
+#adminmenu .wp-menu-image img{
+	height: 35px !important;
+}
+
+.divine__theme__card{
+	position: relative !important;
+	padding: 10px 20px !important;
+	border: 1px solid #c3c4c7 !important;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 4%) !important;
+	background: #fff !important;
+	box-sizing: border-box !important;	
+	width: fit-content !important;
+}
+.divine__copy{
+	background-color: white !important;
+	color: black !important;
+	border: 2px solid black !important;
+	border-radius: 5px !important;
+	padding: 3px 15px !important;	
+}
+.divine__copy:hover{
+	background-color: #333333 !important;
+	color: white !important;
+	border: 2px solid black !important;
+	border-radius: 5px !important;
+}
+.divine__copy__active{
+	background-color: #333333 !important;
+	color: white !important;
+	border: 2px solid black !important;
+	border-radius: 5px !important;
+}
+
+
+.divine__custom__shortcode__btn{
+	background-color: white !important;
+	color: #D652BD !important;
+	border: 2px solid #D652BD !important;
+	border-radius: 5px !important;
+	margin-left: 10px;
+	padding: 3px 15px !important;	
+}
+.divine__custom__shortcode__btn:hover{
+	background-color: #D652BD !important;
+	color: white !important;
+	border: 2px solid #D652BD !important;
+	border-radius: 5px !important;
+}
+.divine__custom__shortcode__btn:active{
+	background-color: #D652BD !important;
+	color: white !important;
+	border: 2px solid #D652BD !important;
+	border-radius: 5px !important;
+}
+
+.divine__custom__horoscope__shortcode__box .w3-table tr th{
+	font-size: 13px !important;
+	width: 160px;
+}
+.divine__custom__horoscope__shortcode__box .w3-table tr td{
+	text-align: left !important;
+}
+.divine__hr{
+	margin: 10px 0 !important;
+}
+.msg-error::before {
+	font-family: FontAwesome;
+    content: "\f00d";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+.msg-success::before {
+	font-family: FontAwesome;
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+.msg-error{
+	color: red !important;
+    margin-top: 10px !important;
+}
+.msg-success{
+	color: green !important;
+    margin-top: 10px !important;
+}
+.divine__mt-2{
+	margin-top: 6px;
+}
+.divine__mb-2{
+	margin-bottom: 6px;
+}
+.divine__a{
+	color: #235e8a;
+}
+.divine__a:hover,.divine__a:active{
+	color: #135e96;
+}
+
+.dapi-p-hr{
+	width: 55%;
+	margin-left: -212px;
+	margin-top: 37px;
+	margin-bottom: -10px;
+}
+
+.dapi-hrscp-them {
+	margin-top: -6px;
+}
+
+.theme_options_1_sec, .theme_options_2_sec {
+	margin-top: 22px;
+}
+
+.theme_options_2 {
+	display: none;
+}
+
+.dapi-horoscope-common-hr {
+	border-color: #2271B1;
+}
+
+.dapi-horoscope-common-r-hr {
+	margin-top: 25px;
+}
+
+.dapi-horoscope-common-hr-bottom {
+	margin-top: -10px;
+}
+
+.dapi-horoscope-common-r-hr-2 {
+	margin-top: -9px;
+}
+
+.dapi-horoscope-common-l-hr-2 {
+	margin-top: -14px;
+}
+
+.dapi-horoscope-common-hr-bottom-2 {
+	margin-top: -10px;
+	margin-bottom: 40px;
+}

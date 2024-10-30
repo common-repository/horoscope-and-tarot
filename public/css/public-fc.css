@@ -1,0 +1,75 @@
+:root {
+
+    --fc-text-color:#000;
+    --fc-theme-color:#D652BD;
+    --fc-category-color:#FFF;
+    --fc-font-size: 13px;
+}
+
+.divine__fc__widget{
+	width: 100% !important;
+	border: 1px solid #EDEDED !important;
+	border-radius: 20px !important;
+	margin: 2rem 0px !important;	
+}
+
+.divine__fc__widget__box{
+	width: 100% !important;
+}
+
+.divine__fc__title{
+	text-align: center !important;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	margin-top: 10px !important;
+	color: var(--fc-text-color) !important;
+}
+.divine__fc__subtitle {
+	color: var(--fc-text-color) !important;
+}
+
+.divine__fc__desc{
+	line-height: 30px !important;
+	letter-spacing: 2px !important;
+	text-align: center !important;
+	color: var(--fc-text-color) !important;
+}
+
+.divine__fc__prev{
+	padding-bottom: 25px !important;
+}
+
+.divine__fc__next{
+	padding-bottom: 25px !important;
+}
+
+.divine__fc__result{
+    max-width: 248px !important;
+    height: 125px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: -140px !important;
+    font-size: 15px !important;	
+    display: table !important;
+    margin-bottom: 20px !important;
+	color: var(--fc-text-color) !important;
+}
+
+.divine__fc__result p{
+	display: table-cell !important;
+	vertical-align: middle !important;
+	color: var(--fc-text-color) !important;
+	font-size: var(--fc-font-size) !important;
+}
+
+.divine__fc__btn{
+	margin-top: 20px !important;
+	background: var(--fc-theme-color) !important;
+	color: var(--fc-category-color) !important;
+}
+
+.divine__fc__btn:hover {
+	background-color: var(--fc-theme-color) !important;
+	color: var(--fc-category-color) !important;
+	filter: brightness(110%) !important;
+}

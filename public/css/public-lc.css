@@ -1,0 +1,621 @@
+:root {
+
+    --lc-theme-color:#D652BD;
+    --lc-category-color:#FFF;
+	--lc-text-color:#000;
+    --lc-general-heart-color:#ed681e;
+	--lc-communication-heart-color:#97dedd;
+	--lc-sex-heart-color:#cc1100;
+	--lc-font-size: 13px;
+}
+/*
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+.divine__mr_1{
+	margin-right: .25rem!important;	
+}
+.divine__ml_1{
+	margin-left: .25rem!important;	
+}
+.divine__plugin__overlay
+{
+	display: none !important;
+}
+
+.divine__plugin__overlay {
+	background: rgba(0,0,0,0.2);
+	color: #000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: center;
+	padding-top: 20%;
+	opacity: 0.5;
+	font-size: 50px;
+	z-index: 100000;
+}
+
+/* Daily Horoscope*/
+.divine__lc__widget{
+		font-size: var(--widget-font-size); 
+		border-radius: 20px;
+		/*padding-bottom: 25px;*/
+	    padding: 10px 10px 20px 10px;
+		margin: 2rem 0px;	
+       border: 1px solid #ededed;
+       box-shadow: none !important;
+	}
+
+	.divine__dh__title{
+		/*display: flex;*/
+		justify-content: space-between;
+	}
+	.divine__dh__name{
+    	text-align: center;
+	}
+    .loveWidget .divine__ta__heading {
+		margin: 1rem auto !important;
+		margin-top: 0.5rem !important;
+		font-size: 20px !important;
+		font-weight: 600 !important;
+		text-align: center !important;
+		text-transform: capitalize;
+		color: var(--lc-text-color) !important;
+    }
+    .divine__dh__select__sign .w3-bar-item{
+    	padding: 5px 10px !important;
+    	line-height: initial !important;
+    }
+	.divine__dh__horo__nav{
+		margin-top: 10px;
+		text-align: center;
+		/*background: var(--main-color);*/
+	}
+
+	/* Daily Weekly Monthly Tab*/
+	.divine__dh__horo__links {
+	    /**zoom: 1;*/
+	    padding: 10px 0px;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    text-align: center;
+	   /* background: #313131;*/
+	}
+
+
+	.divine__lc__widget .divine__dh__horo__link__effect a {
+	    padding: 10px 0;
+	    margin: 0 12px;
+	    color: var(--lc-text-color) !important;
+	    text-shadow: none;
+	    position: relative;
+	    font-size: 22px;
+	    letter-spacing: 1px;
+	    text-decoration: none !important;
+	}
+
+/*	.divine__dh__horo__link__effect a::before {
+	    position: absolute;
+	    top: 10px;
+	    left: 0;
+	    overflow: hidden;
+	    padding: 5px 0;
+	    max-width: 0;
+	    text-decoration: underline !important; 
+	    color: var(--theme-color);
+	    content: attr(data-hover);
+	    -webkit-transition: max-width 0.5s;
+	    -moz-transition: max-width 0.5s;
+	    transition: max-width 0.5s;
+	    line-height: 20px;
+	}*/
+
+	.divine__dh__horo__link__effect a:active,
+	.divine__dh__horo__link__effect a:focus,
+	.divine__dh__horo__link__effect a:hover,
+	.divine__dh__horo__link__effect a.active{
+	    text-decoration: underline !important; 
+	    border-radius: 0px !important;
+	    color: var(--theme-color) !important;
+	    padding-bottom: 1px !important;
+	    outline: none !important;
+	    background: none !important;
+	}
+
+	.divine__dh__horo__link__effect a:hover::before {
+	    max-width: 100%;
+	}
+	/* Daily Weekly Monthly Tab*/
+
+	.divine__lc__widget .divine__dh__date__nav{
+		margin-top: 10px;
+		text-align: center;
+		color: var(--lc-text-color) !important; 
+		/*background: var(--main-color);*/
+	}
+
+	
+
+	.divine__dh__icon__comment {
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 18px;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.divine__dh__icon__comment:before {
+	    content: "\f27b";
+	}
+
+	.divine__dh__content_wrap{
+		margin-top: -50px;
+		background: transparent;
+		/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);*/
+		padding-top: 7px !important;
+		border-radius: 4px;
+		padding: 30px 18px !important;
+	}
+	.divine__lc__widget .divine__dh__content_wrap p{
+		color: var(--lc-text-color) !important;
+		font-size: var(--lc-font-size) !important;
+	}
+	.divine__dh__result__date{
+		margin-left: 16px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.divine__dh__content__data {
+		display: none;
+		padding: 0px 30px;
+		border-top: none;
+		color:black;
+		-webkit-animation: fadeEffect 1.25s;
+		animation: fadeEffect 1.25s;
+	}
+    .divine__dh__content__title{
+    	font-weight: bold;
+    }
+	.divine__dh__content__data p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 0.9rem;
+	}
+
+	a.divine__dh__category__links:hover, 
+	a.divine__dh__category__links.active {
+	    background-color: #000099;
+	    background-color: hsla(0,0%,100%,.2);
+	    transition: background-color .1s .1s;
+	    border-radius: 5px;
+	    text-decoration: none;
+	}
+
+	.divine-col{
+		flex: 16.66%;
+		text-align: center;
+	}
+	.divine__dh__signbox{
+		/*padding: 10px;*/
+		margin-bottom: 10px;
+	}
+	
+	.divine__dh__sign{
+		display: grid;
+		justify-content: center;
+	    border-radius: 50%;
+	    font-size: 14px;
+	    align-content: center;
+	    padding: 10px;
+	    cursor: pointer;
+	    margin-left: auto;
+	    margin-right: auto;
+		/*box-shadow: 0 4px 10px 0 rgb(0 0 0 / 5%), 0 4px 20px 0 rgb(0 0 0 / 8%);*/
+	}
+	.divine__dh__sign:hover,
+	.divine__dh__sign.active{
+	    /*border-radius: 50%;
+		box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 19%);*/
+		font-weight: bolder;
+	}
+
+	.divine__dh__sign img{
+		height: 80px !important;
+		width: 80px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media only screen and (max-width: 700px) {
+		.divine-col {
+		   flex: 24.99%;
+		}
+		.divine__dh__horo__links{
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+		.divine__dh__horo__link__effect a{
+			font-size: 20px;
+			margin: 0 5px;			
+		}
+		
+	
+	}
+	@media only screen and (max-width: 500px) {
+		.divine-col {
+		   flex: 33.33%;
+		}
+		
+	}	
+	@media only screen and (max-width: 400px) {
+		.divine-col {
+		   flex: 50%;
+		}
+	}
+/* End Daily Horoscope*/
+.zodiacLoveCompatibility .loveWidget {
+	border-radius: 10px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.zodiacLoveCompatibility .loveWidget .contentDiv {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding: 35px;
+}
+.zodiacLoveCompatibility .contentDiv span {
+	color: var(--lc-text-color) !important; 
+}
+.zodiacLoveCompatibility .divine__dh__content__data h3{
+	color: var(--lc-text-color) !important; 
+}
+.zodiacLoveCompatibility .divine__dh__content__data h5{
+	color: var(--lc-text-color) !important; 
+}
+.zodiacLoveCompatibility .divine__dh__content__data p{
+	color: var(--lc-text-color) !important; 
+	font-size: var(--lc-font-size) !important; 
+}
+.zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage {
+	background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    border: 5px solid #8c52ff;
+}
+
+.zodiacLoveCompatibility .circlesWrap .circleDashed, .zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage {
+	background-color: transparent;
+    margin: 0 16px;
+    height: 135px;
+    width: 135px;
+    border-radius: 50% !important;
+}
+
+.zodiacLoveCompatibility .circlesWrap .circle-filled1-midDivSpan {
+	position: absolute;
+    top: 75%;
+    z-index: 120;
+    font-size: 14px;
+    color: #000;
+    /* font-weight: bold; */
+    font-family: "Poppins-Light", sans-serif;
+}
+.zodiacLoveCompatibility .circlesWrap .circle-filled1-midDivImg {
+	position: absolute;
+	z-index: 111;
+	text-align: center;
+	top: 11%;
+}
+.dashed-cir {
+	border: 2px dashed var(--lc-theme-color)  !important;
+}
+.filled-cir {
+	border: 2px solid var(--lc-theme-color) !important;
+}
+.zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage img {
+	margin: 0 auto;
+	height: 80px !important;
+	width: 80px !important;
+}
+.zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage .question {
+    margin: 0;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 13px;
+}
+.zodiacLoveCompatibility .circlesWrap .ampersand {
+	font-size: 35px;
+	color: #172053;
+	font-weight: bold;
+}
+.zodiacLoveCompatibility .circlesWrap .circleDashed {
+	border: 2px dashed #2a2b5b;
+	background-color: transparent;
+}
+
+.zodiacLoveCompatibility h3 {
+	color: var(--lc-text-color) !important; 
+	margin: 30px 0;
+	text-align: center;
+	font-weight: bold;
+}
+.zodiacLoveCompatibility .zodiacWrapper {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    margin-left: auto !important;
+	margin-right: auto !important;
+}
+.zodiacLoveCompatibility .zodiacWrapper .signWrap.active-sign {
+	background: #5a5a5a17;
+	border-radius: 1em;
+	box-shadow: 0 2px 7px 3px #b3b3b317;
+}
+.zodiacLoveCompatibility .zodiacWrapper .signWrap {
+	padding: 7px;
+    margin: 0px;
+    text-align: center;
+    cursor: pointer;
+    width: 137px;
+    pointer-events: stroke;
+    font-family: "Poppins-Light", sans-serif;
+    background: transparent;
+    border-radius: 1em;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.zodiacLoveCompatibility .zodiacWrapper .signDate {
+	transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.zodiacLoveCompatibility .zodiacWrapper .signName {
+	transition: all 0.3s ease-in-out;
+    font-size: 12px !important;
+    margin: 3px !important;
+    text-align: center !important;
+	color: var(--lc-text-color) !important; 
+}
+.zodiacLoveCompatibility .zodiacWrapper .signWrap img {
+	margin: 0;
+    /* height: 150px; */
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+    border-radius: 10px;
+    width: 80%;
+}
+.zodiacLoveCompatibility .circlesWrap {
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.show{
+	display: flex !important;
+}
+.hide{
+	display: none !important;
+}
+
+.signhead{
+	text-align: center;
+	font-size: 24px;
+}
+.sign1ChangeLink, .sign2ChangeLink {
+    margin-top: 166px;
+    font-size: 12px;
+	z-index: 111;
+	text-decoration: none !important;
+}
+.divine__dh__content_wrap  .general, .divine__dh__content_wrap  .communication, .divine__dh__content_wrap  .sex {
+    /* display: flex; */
+    width: 100%;
+    margin: 15px 0;
+}
+.divine__dh__content_wrap  .scoreTitle {
+    width: 100%;
+}
+.divine__dh__content_wrap  .heartsWrap {
+    width: 100%;
+}
+.divine__dh__content_wrap  .heartsWrap img {
+    padding-right: 12px;
+    height: 20px;
+}
+.zodiacLoveCompatibility .divine__dh__content_wrap h3{
+	text-align: left;
+    margin-top: 30px;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+	color: var(--lc-text-color) !important; 
+}
+.zodiacLoveCompatibility .divine__dh__content_wrap h5{
+	text-align: left;
+	color: var(--lc-text-color) !important; 
+}
+.question {
+	width: 50% !important;
+    margin: 0 auto;
+    margin-top: 24% !important;
+}
+
+.zodiacLoveCompatibility .zodiacWrapper .col-md-2{
+width: 16.666667% !important;
+}
+
+.zodiacLoveCompatibility .zodiacWrapper .col-sm-4{
+	width: 33.333334% !important;
+}
+.zodiacLoveCompatibility .zodiacWrapper .col-xs-4{
+	width: 33.333334% !important;
+}
+
+.zodiacLoveCompatibility .zodiacWrapper .col-xs-4 img{
+	height: 80px !important;
+    width: 80px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.zodiacLoveCompatibility .zodiacWrapper .col-sm-4 img{
+	height: 80px !important;
+    width: 80px !important;
+    margin-left: -4px !important;
+    margin-right: auto !important;
+	max-width: 100%;
+    max-height: 100%;
+    height: auto !important;
+}
+.divine__dh__content_wrap  .sex {
+	padding: 0 0 20px 0 !important;
+}
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1.2em;
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+.w3-card-4, .w3-hover-shadow:hover {
+    box-shadow: none !important;
+    border: 1px solid #ededed;
+    border-radius: 20px;
+}
+#DivinePositiveAspects h3{
+	margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: var(--lc-text-color) !important;
+}
+#DivineOverallCompatibility h3{
+	margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: var(--lc-text-color) !important;
+}
+#DivineNegativeAspects h3{
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: var(--lc-text-color) !important;
+}
+#DivineElements h3{
+	margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: var(--lc-text-color) !important;
+}
+#DivineIdealDate h3{
+	margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: var(--lc-text-color) !important;
+}
+#DivineScore h3{
+	margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: var(--lc-text-color) !important;
+}
+#DivineScore h5{
+   color: var(--lc-text-color) !important;
+   margin-bottom: 11px !important;
+}
+.divine__lc__changecard__btn {
+	color: var(--lc-category-color) !important;
+	background-color: var(--lc-theme-color) !important;
+	border-color: var(--lc-theme-color) !important;
+	padding: 0.375rem 0.75rem !important;
+	font-size: 16px !important;
+	line-height: 1.5 !important;
+	border-radius: 0.25rem !important;
+	margin-left: 16px;
+}
+.sex_heart {
+	color: var(--lc-sex-heart-color) !important;
+}
+.general_heart {
+	color: var(--lc-general-heart-color) !important;
+}
+.communication_heart {
+	color: var(--lc-communication-heart-color) !important;
+}
+.fa-heart, .fa-heart-o {
+	font-size: 1.4rem !important;
+    margin-right: 5px;
+    font-weight: 500 !important;
+}
+
+fa-heart-o .sex_heart.half:before {
+    background: -webkit-linear-gradient(180deg,#fff 0%, #fff 50%,var(--lc-sex-heart-color) 50%);
+    -webkit-text-fill-color: transparent;
+}
+
+fa-heart-o .communication_heart.half:before {
+    background: -webkit-linear-gradient(180deg,#fff 0%, #fff 50%,var(--lc-communication-heart-color) 50%);
+    -webkit-text-fill-color: transparent;
+}
+
+fa-heart-o .general_heart.half:before {
+    background: -webkit-linear-gradient(180deg,#fff 0%, #fff 50%,var(--lc-general-heart-color) 50%);
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.zodiacLoveCompatibility .loveWidget .contentDiv {
+		padding: 5px;
+	}
+	.zodiacLoveCompatibility h3 {
+		margin: 20px 0;	
+	}
+	.divine__dh__content_wrap {
+	    padding: 30px 0px !important;	
+	}
+	.divine__dh__content_wrap .divine__dh__content__data {
+		padding: 0px 8px !important;
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+	.zodiacLoveCompatibility .circlesWrap .circleDashed, .zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage {
+		margin: 0 8px;
+        height: 115px;
+        width: 115px;
+	}
+	.zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage img {
+		margin: 0 auto;
+        height: 65px !important;
+        width: 65px !important;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.zodiacLoveCompatibility .circlesWrap .circleDashed, .zodiacLoveCompatibility .circlesWrap .circle-filled1-midPage {
+		margin: 0 4px;
+        height: 110px;
+        width: 110px;
+	}
+}

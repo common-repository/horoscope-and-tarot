@@ -1,0 +1,1080 @@
+:root {
+
+    --text-color:#000;
+    --theme-color:#D652BD;
+    --category-color:#FFF;
+	--font-size: 13px;
+	--cat_default_color: #c290cb;
+    /*--widget-font-size: 14px;*/
+
+}
+
+/*
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+.divine__plugin__overlay {
+	background: rgba(0,0,0,0.2) !important;
+	color: #000 !important;
+	position: fixed !important;
+	height: 100% !important;
+	width: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	float: left !important;
+	text-align: center !important;
+	padding-top: 20% !important;
+	opacity: 0.5 !important;
+	font-size: 50px !important;
+	z-index: 100000 !important;
+}
+
+/* Daily Horoscope*/
+	.divine__dh__widget{
+		font-size: var(--widget-font-size) !important; 
+		border-radius: 20px !important;
+		/*padding-bottom: 25px;*/
+	    padding: 20px 10px !important;
+		margin: 2rem 0px !important;	
+       border: 1px solid #ededed !important;
+       box-shadow: none !important;
+	}
+
+	.divine__dh__title{
+		/*display: flex;*/
+		justify-content: space-between !important;
+	}
+	.divine__dh__name{
+    	text-align: center !important;
+	}
+    .divine__dh__date{
+    	margin: 0px !important;
+    	font-size: 22px !important;
+    	font-weight: 400 !important;
+		color: var(--text-color) !important;
+    }
+    .divine__dh__select__sign .w3-bar-item{
+    	padding: 5px 10px !important;
+    	line-height: initial !important;
+    }
+	.divine__dh__horo__nav{
+		margin-top: 10px !important;
+		text-align: center !important;
+		/*background: var(--main-color);*/
+	}
+
+	/* Daily Weekly Monthly Tab*/
+	.divine__dh__horo__links {
+	    /**zoom: 1;*/
+	    padding: 10px 0px !important;
+	    -moz-box-sizing: border-box !important;
+	    -webkit-box-sizing: border-box !important;
+	    box-sizing: border-box !important;
+	    text-align: center !important;
+	   /* background: #313131;*/
+	}
+
+
+	.divine__dh__horo__link__effect a {
+	    padding: 10px 0 !important;
+	    margin: 0 20px !important;
+	    color: var(--text-color) !important;
+	    text-shadow: none !important;
+	    position: relative !important;
+	    font-size: 22px !important;
+	    letter-spacing: 1px !important;
+	    text-decoration: none !important;
+	}
+
+	.divine__dh__horo__link__effect a:active,
+	.divine__dh__horo__link__effect a:focus,
+	.divine__dh__horo__link__effect a:hover,
+	.divine__dh__horo__link__effect a.active{
+	    /*border-bottom: 2px solid var(--theme-color) !important;*/
+	    text-decoration: underline !important;
+	    border-radius: 0px !important;
+	    color: var(--theme-color) !important;
+	    padding-bottom: 1px !important;
+	    outline: none !important;
+	    background: none !important;
+	}
+
+	.divine__dh__horo__link__effect a:hover::before {
+	    max-width: 100% !important;
+	}
+	.padding-top-0{
+		padding-top: 0px !important;
+	}
+	/* Daily Weekly Monthly Tab*/
+
+	.divine__dh__date__nav{
+		margin-top: 10px !important;
+		text-align: center !important;
+		/*background: var(--main-color);*/
+	}
+
+	.divine__dh__date__nav a{
+		color: var(--theme-color) !important; 
+		border: 1px solid var(--theme-color) !important;
+	    padding: 5px 10px !important;
+	    border-radius: 5px !important;
+	    text-decoration: none !important
+	}
+
+	.divine__dh__date__nav a.active{
+		color: #fff !important;
+		background: var(--theme-color) !important; 
+	}
+
+	.divine__dh__date__nav a:hover{
+		color: #fff !important;
+		background: var(--theme-color) !important; 
+	}
+
+	.divine__dh__category_tabs{
+		background-color: var(--theme-color) !important;
+		box-shadow: 0 5px 20px 0 rgb(0 0 0 / 20%), 0 13px 24px -11px rgb(135 135 135 / 60%) !important;
+		border-radius: 4px !important;
+		position: relative !important;
+		z-index: 99 !important;
+		margin: 0 auto !important;
+		width: 97% !important;	
+	}
+	.divine__dh__category_tabs ul {
+		list-style-type: none !important;
+		margin: 0 !important;
+		padding: 20px 15px !important;
+		overflow: hidden !important;
+	}
+
+	.divine__dh__category_tabs ul li{
+		float: left !important;
+	}
+	
+	.divine__dh__category_tabs ul li::marker {
+	    content: none !important;
+	}
+
+	.divine__dh__category_tabs ul li a{
+		display: inline-block !important;
+		color: white !important;
+		text-align: center !important;
+		padding: 8px 12px !important;
+		text-decoration: none !important;
+		transition: 0.1s !important;
+		margin-bottom: 10px !important;
+		font-size: 12px !important;
+		color: var(--category-color) !important;
+	    text-decoration: none !important;
+	    outline: none !important;
+	}
+
+	.divine__dh__icon__comment {
+		display: inline-block !important;
+		font: normal normal normal 14px/1 FontAwesome !important;
+		font-size: 18px !important;
+		text-rendering: auto !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+	}
+
+	.divine__dh__icon__comment:before {
+	    content: "\f27b" !important;
+	}
+
+	.divine__dh__content_wrap{
+		margin-top: -50px !important;
+		background: transparent;
+		/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);*/
+		padding-top: 65px !important;
+		border-radius: 4px !important;
+	}
+	.divine__dh__result__date{
+		margin-left: 16px !important;
+		font-weight: bold !important;
+		font-size: 14px !important;
+	}
+	.divine__dh__content__data {
+		display: none;
+		padding: 0px 16px !important;
+		border-top: none !important;
+		color:black !important;
+		-webkit-animation: fadeEffect 1.25s !important;
+		animation: fadeEffect 1.25s !important;
+	}
+    .divine__dh__content__title{
+    	font-weight: bold !important;
+    }
+	.divine__dh__content__data p{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		font-size: 0.9rem !important;
+		color: var(--text-color) !important;
+	}
+
+	a.divine__dh__category__links:hover, 
+	a.divine__dh__category__links.active {
+	    background-color: #000099 !important;
+	    background-color: hsla(0,0%,100%,.2) !important;
+	    transition: background-color .1s .1s !important;
+	    border-radius: 5px !important;
+	    text-decoration: none !important;
+	}
+
+	.divine-col{
+		flex: 16.66% !important;
+		text-align: center !important;
+	}
+	.divine__dh__signbox{
+		/*padding: 10px;*/
+		margin-bottom: 10px !important;
+	}
+	
+	.divine__dh__sign{
+		display: grid !important;
+		justify-content: center !important;
+	    border-radius: 50% !important;
+	    font-size: 14px !important;
+	    align-content: center !important;
+	    padding: 10px !important;
+	    cursor: pointer !important;
+	    margin-left: auto !important;
+	    margin-right: auto !important;
+		/*box-shadow: 0 4px 10px 0 rgb(0 0 0 / 5%), 0 4px 20px 0 rgb(0 0 0 / 8%);*/
+	}
+	
+	.divine__dh__sign:hover,
+	.divine__dh__sign.active{
+	    /*border-radius: 50%;
+		box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 19%);*/
+		font-weight: bolder !important;
+	}
+
+	.divine__dh__sign img{
+		height: 80px !important;
+		width: 80px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	/*===============================
+	========== Theme 2 Start ==============
+	================================*/
+
+	.dapi_h_tabs {
+		border-bottom: 1px solid #ededed !important;
+		padding: 0px !important;
+	}
+
+	.dapi_h_tabs button {
+		background: transparent !important;
+		color: #000 !important;
+		font-size: 20px !important;
+		font-weight: 600 !important;
+		padding: 5px 0px !important;
+		margin-right: 25px !important;
+		border: unset !important;
+	}
+
+	.dapi_h_tabs .divine__dh__api__btn.active {
+		border: unset !important;
+		border-bottom: 10px solid var(--theme-color) !important;
+	}
+
+	.dapi_h_tabs button:hover {
+		/* #eb8f4c */
+		/* background: var(--theme-color) !important; */
+		border: unset !important;
+		border-bottom: 10px solid var(--theme-color) !important;
+	}
+
+	.dapi-no-brdr {
+		border: none !important;
+	}
+
+	.dapi-p-0 {
+		padding: 0px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.dapi_sign_img {
+		display: none !important;
+	}
+
+	.dapi_sign_img img {
+		height: 150px !important;
+		width: 150px !important;
+		/* height: 180px !important;
+		width: 180px !important; */
+	}
+
+	.h_theme_2_h2 {
+		font-size: 34px !important; /*46px*/
+		font-weight: 800 !important;
+		margin-top: 14px !important; /*34px*/
+		margin-bottom: 8px !important;
+	}
+
+	.h_theme_2_muted_ttl {
+		font-size: 14px !important;
+		font-weight: 600 !important;
+		color: grey !important;
+		margin-bottom: 8px !important;
+	}
+
+	.h_theme_day_week_year {
+		font-size: 16px !important;
+		background: transparent !important;
+		border: unset !important;
+		border-bottom: 2px dotted grey !important;
+		color: grey !important;
+		padding: 0px 0px 1px 0px !important;
+		margin-right: 8px !important;
+	}
+
+	.h_theme_day_week_year:hover {
+		cursor: pointer !important;
+		color: var(--theme-color) !important;
+		border-bottom-color: var(--theme-color) !important;
+	}
+
+	.h_theme_day_week_year.divine__dh__date__btn.active, .h_theme_day_week_year.divine__dh__week__btn.active, .h_theme_day_week_year.divine__dh__month__btn.active, .h_theme_day_week_year.divine__dh__year__btn.active {
+		color: var(--theme-color) !important;
+		border-bottom-color: var(--theme-color) !important;
+	}
+
+	.h_theme_2_select {
+		margin-top: 11px !important; /*48px !important;*/
+		background: transparent !important;
+		border: 1px solid black !important;
+		border-radius: 8px !important;
+		font-size: 18px !important;
+		font-weight: 600 !important;
+		padding: 10px !important;
+		width: 100% !important;
+	}
+
+	.h_theme_2_cat_btn {
+		background: var(--cat_default_color) !important;
+		border-radius: 9px !important;
+		font-size: 19px !important;
+		font-weight: 600 !important;
+		padding: 5px 20px !important;
+		color: var(--category-color) !important;
+		margin-right: 10px !important;
+		margin-bottom: 15px !important;
+	}
+
+	.h_theme_2_cat_btn_square {
+		background: var(--cat_default_color) !important;
+		border-radius: 15px !important;
+    	font-size: 14px !important;
+		padding: 8px !important;
+    	color: var(--category-color) !important;
+		height: 90px !important;
+    	width: 90px !important;
+	}
+
+	.h_theme_2_cat_btn.divine__dh__category__links.active, .h_theme_2_cat_btn_square.divine__dh__category__links.active {
+		background: var(--theme-color) !important;
+	}
+
+	/* .h_theme_2_cat_btn:nth-child(1) {
+		margin-left: 0px !important;
+	} */
+
+	.h_theme_2_cat_btn:hover {
+		background: var(--theme-color) !important;
+	}
+
+	.h_theme_2_cat_btn_cnt {
+		border-bottom: 1px solid #ededed !important;
+		padding: 20px 0px !important;
+	}
+
+	.dapi-thm2_cat_heading_section {
+		margin-top: 10px !important;
+		margin-bottom: 8px !important;
+	}
+
+	.dapi-thm2_cat_heading_mt {
+		margin-top: 5px !important;
+	}
+
+	.dapi-thm2_cat_heading_border {
+		border-top: 1px solid #ededed !important;
+	}
+
+	.dapi_thm2_cat_heading {
+		color: #545454 !important;
+		font-size: 23px !important;
+		font-weight: 600 !important;
+	}
+
+	.h_theme_2_content {
+		margin-top: 25px !important;
+		color: grey !important;
+		font-size: var(--font-size) !important;
+	}
+
+	.dapi-h_thm2_imgs .active {
+		display: block !important;
+		float: left !important;
+	}
+
+	.dapi-cst-mrgn {
+		margin-top: 10px !important;
+		margin-bottom: 10px !important
+	}
+
+	.dapi-h_thm2_ltsec {
+		float: left !important;
+	}
+
+	.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+	}
+
+	.dapi-h_thm2_rtsec {
+		/* margin-left: 40px !important; */
+		float: left !important;
+	}
+
+	.dapi-no-m {
+		margin-top: 0px !important;
+		text-align: left !important;
+	}
+
+	.dapi-mtb-10 {
+		margin-top: 0px !important;
+		margin-bottom: 20px !important;
+		padding-top: 0px !important;
+	}
+
+	.dapi-pleft0 {
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+	}
+
+	.dapi-thm2_content_wrap p {
+		color: #000 !important;
+	}
+
+	.dapi_thm2-cat_btn_pb {
+		padding: 0px !important;
+		padding-bottom: 20px !important;
+	}
+	
+	.col-lg-12.col-md-12.col-sm-12.dapi_thm2-cat_btn_pb, .col-lg-12.col-md-12.col-sm-12.h_theme_2_cat_btn_cnt{
+		padding-left: 0px !important;
+	}
+
+	.h_theme_2_cat_btn img {
+		height: 19px !important;
+	}
+
+	.h_theme_2_cat_btn_square img {
+		height: 23px !important;
+		display: flex !important;
+		margin: 0 auto !important;
+		margin-bottom: 5px !important;
+	}
+
+	.divine__dh__content_wrap.dapi-mtb-10.dapi-thm2_content_wrap p, .h_theme_2_content { 
+		/*Theme 2 text color*/
+		color: var(--text-color) !important;	
+	}
+
+	#astro-widget select {
+		/* styling */
+		background-color: white !important;
+		/* border: thin solid blue !important; */
+		border-radius: 4px !important;
+		display: inline-block !important;
+		/* font: inherit !important; */
+		/* line-height: 1.5em !important; */
+		padding: 0.5em 3.5em 0.5em 1em !important;
+	  
+		/* reset */
+		/* margin: 0 !important; */
+		-webkit-box-sizing: border-box !important;
+		-moz-box-sizing: border-box !important;
+		box-sizing: border-box !important;
+		-webkit-appearance: none !important;
+		-moz-appearance: none !important;
+	}
+
+	#astro-widget select.h_theme_2_select {
+		background-image:
+		  linear-gradient(45deg, transparent 50%, gray 50%),
+		  linear-gradient(135deg, gray 50%, transparent 50%),
+		  linear-gradient(to right, #ccc0, #ccc0) 
+		  !important;
+		background-position:
+		  calc(100% - 20px) calc(1em + 2px),
+		  calc(100% - 15px) calc(1em + 2px),
+		  calc(100% - 2.5em) 0.5em !important;
+		background-size:
+		  5px 5px,
+		  5px 5px,
+		  1px 1.5em !important;
+		background-repeat: no-repeat !important;
+	}
+	  
+	/* #astro-widget select.h_theme_2_select:focus {
+		background-image:
+		  linear-gradient(45deg, green 50%, transparent 50%),
+		  linear-gradient(135deg, transparent 50%, green 50%),
+		  linear-gradient(to right, #ccc0, #ccc0) !important;
+		background-position:
+		  calc(100% - 15px) 1em,
+		  calc(100% - 20px) 1em,
+		  calc(100% - 2.5em) 0.5em !important;
+		background-size:
+		  5px 5px,
+		  5px 5px,
+		  1px 1.5em;
+		background-repeat: no-repeat !important;
+		border-color: green !important;
+		outline: 0 !important;
+	} */
+	  
+	#astro-widget select:-moz-focusring {
+		color: transparent !important;
+		text-shadow: 0 0 0 #000 !important;
+	}
+
+	@media(min-width:992px) and (max-width:1180px) {
+
+		.dapi_sign_img img {
+			height: 140px !important;
+			width: 140px !important;
+		}
+
+	}
+
+	@media(min-width:768px) and (max-width:992px) {
+		.dapi_h_tabs button {
+			background: transparent !important;
+			font-size: 17px !important;
+			font-weight: 600 !important;
+			padding: 5px 0px !important;
+			margin-right: 24px !important;
+		}
+		.dapi_h_tabs button:nth-child(4) {
+			margin-right: 0px !important;
+		}
+		.dapi_h_tabs button:hover {
+			background: transparent !important;
+		}
+		.dapi_sign_img img {
+			height: 120px !important;
+			width: 120x !important;
+		}
+		.dapi-h_thm2_imgs {
+			float: left !important;
+		}
+		.dapi-h_thm2_imgs .active {
+			padding-left: 0px !important;
+		}
+		.divine__dh__date__nav.dapi-no-m {
+			margin-left: 0px !important;
+		}
+		.dapi-h_thm2_ltsec{
+			float: left !important;
+		}
+		.h_theme_2_h2 {
+			font-size: 26px !important;
+			font-weight: 700 !important;
+			margin-top: 14px !important;
+			margin-bottom: 8px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 20px !important;
+		}
+		.divine__dh__content_wrap.dapi-mtb-10.dapi-thm2_content_wrap p, .h_theme_2_content {
+			font-size: 16px !important;
+		}
+		.h_theme_2_content {
+			margin-top: 15px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 20px !important;
+		}
+		.h_theme_2_select {
+			margin-top: 14px !important;
+			background: transparent !important;
+			border: 1px solid black !important;
+			border-radius: 4px !important;
+			font-size: 16px !important;
+			font-weight: 600 !important;
+			padding: 6px !important;
+			width: 100% !important;
+		}
+		.dapi_thm2_cat_heading {
+			font-size: 20px !important;
+		}
+		.h_theme_2_cat_btn_square {
+			margin-right: 8px !important;
+			margin-bottom: 12px !important;
+		}
+		/* .h_theme_2_cat_btn_square:nth-child(3), .h_theme_2_cat_btn_square:nth-child(6) {
+			margin-right: 0px !important;
+		} */
+		.h_theme_2_cat_btn_cnt {
+			border-bottom: 1px solid #ededed !important;
+			/* margin-top: 25px !important; */
+			padding-bottom: 9px !important;
+		}
+		.col-lg-12.col-md-12.col-sm-12.h_theme_2_cat_btn_cnt, .col-lg-12.col-md-12.col-sm-12.dapi_thm2-cat_btn_pb {
+			padding-left: 0px !important;
+		}
+		.h_theme_day_week_year, .h_theme_2_muted_ttl {
+			font-size: 15px !important;
+		}
+		.h_theme_2_cat_btn {
+			/* background: #D9D9D9 !important; */
+			border-radius: 9px !important;
+			font-size: 15px !important;
+			font-weight: 600 !important;
+			padding: 5px 14px !important;
+			/* color: #000 !important; */
+			margin-left: 0px !important;
+			margin-right: 5px !important;
+			margin-bottom: 10px !important;
+		}
+	}
+
+	@media(min-width:576px) and (max-width:768px) {
+		.dapi_h_tabs button {
+			background: transparent !important;
+			font-size: 17px !important;
+			font-weight: 600 !important;
+			padding: 5px 0px !important;
+			margin-right: 24px !important;
+		}
+		.dapi_h_tabs button:nth-child(4) {
+			margin-right: 0px !important;
+		}
+		.dapi_h_tabs button:hover {
+			background: transparent !important;
+		}
+		.dapi_sign_img img {
+			height: 110px !important;
+			width: 110px !important;
+		}
+		.dapi-h_thm2_imgs {
+			float: left !important;
+		}
+		.dapi-h_thm2_imgs .active {
+			padding-left: 0px !important;
+		}
+		.divine__dh__date__nav.dapi-no-m {
+			margin-left: 0px !important;
+		}
+		.dapi-h_thm2_ltsec{
+			float: left !important;
+		}
+		.h_theme_2_h2 {
+			font-size: 24px !important;
+			font-weight: 700 !important;
+			margin-top: 14px !important;
+			margin-bottom: 8px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 20px !important;
+		}
+		.divine__dh__content_wrap.dapi-mtb-10.dapi-thm2_content_wrap p, .h_theme_2_content {
+			font-size: 16px !important;
+		}
+		.h_theme_2_content {
+			margin-top: 15px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 20px !important;
+		}
+		.h_theme_2_select {
+			margin-top: 14px !important;
+			background: transparent !important;
+			border: 1px solid black !important;
+			border-radius: 4px !important;
+			font-size: 16px !important;
+			font-weight: 600 !important;
+			padding: 6px !important;
+			width: 100% !important;
+		}
+		.dapi_thm2_cat_heading {
+			font-size: 20px !important;
+		}
+		.h_theme_2_cat_btn_square {
+			margin-right: 8px !important;
+			margin-bottom: 12px !important;
+		}
+		/* .h_theme_2_cat_btn_square:nth-child(3), .h_theme_2_cat_btn_square:nth-child(6) {
+			margin-right: 0px !important;
+		} */
+		.h_theme_2_cat_btn_cnt {
+			border-bottom: 1px solid #ededed !important;
+			/* margin-top: 25px !important; */
+			padding-bottom: 9px !important;
+		}
+		.col-lg-12.col-md-12.col-sm-12.h_theme_2_cat_btn_cnt, .col-lg-12.col-md-12.col-sm-12.dapi_thm2-cat_btn_pb {
+			padding-left: 0px !important;
+		}
+		.h_theme_day_week_year, .h_theme_2_muted_ttl {
+			font-size: 15px !important;
+		}
+		.h_theme_2_cat_btn {
+			/* background: #D9D9D9 !important; */
+			border-radius: 9px !important;
+			font-size: 15px !important;
+			font-weight: 600 !important;
+			padding: 5px 14px !important;
+			/* color: #000 !important; */
+			margin-left: 0px !important;
+			margin-right: 5px !important;
+			margin-bottom: 10px !important;
+		}
+	}
+
+	@media(min-width:400px) and (max-width:576px) {
+		.dapi_h_tabs button {
+			background: transparent !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 5px 0px !important;
+			margin-right: 24px !important;
+		}
+		.dapi_h_tabs button:nth-child(4) {
+			margin-right: 0px !important;
+		}
+		.dapi_h_tabs button:hover {
+			background: transparent !important;
+		}
+		.dapi_sign_img img {
+			height: 105px !important;
+			width: 105px !important;
+		}
+		.dapi-h_thm2_imgs {
+			float: left !important;
+		}
+		.dapi-h_thm2_imgs .active {
+			padding-left: 0px !important;
+		}
+		.divine__dh__date__nav.dapi-no-m {
+			margin-left: 0px !important;
+		}
+		.dapi-h_thm2_ltsec{
+			float: left !important;
+		}
+		.h_theme_2_h2 {
+			font-size: 24px !important;
+			font-weight: 700 !important;
+			margin-top: 14px !important;
+			margin-bottom: 8px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 0px !important;
+		}
+		.divine__dh__content_wrap.dapi-mtb-10.dapi-thm2_content_wrap p, .h_theme_2_content {
+			font-size: 16px !important;
+		}
+		.h_theme_2_content {
+			margin-top: 15px !important;
+		}
+		/* .dapi-h_thm2_rtsec {
+			margin-left: 0px !important;
+		} */
+		.h_theme_2_select {
+			margin-top: 14px !important;
+			background: transparent !important;
+			border: 1px solid black !important;
+			border-radius: 4px !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 5px !important;
+			width: 100% !important;
+		}
+		.dapi_thm2_cat_heading {
+			font-size: 20px !important;
+		}
+		.h_theme_2_cat_btn_square {
+			margin-right: 5px !important;
+			margin-bottom: 12px !important;
+		}
+		/* .h_theme_2_cat_btn_square:nth-child(3), .h_theme_2_cat_btn_square:nth-child(6) {
+			margin-right: 0px !important;
+		} */
+		.h_theme_2_cat_btn_cnt {
+			border-bottom: 1px solid #ededed !important;
+			/* margin-top: 25px !important; */
+			padding-bottom: 9px !important;
+		}
+		.col-lg-12.col-md-12.col-sm-12.h_theme_2_cat_btn_cnt, .col-lg-12.col-md-12.col-sm-12.dapi_thm2-cat_btn_pb {
+			padding-left: 0px !important;
+		}
+		.h_theme_day_week_year, .h_theme_2_muted_ttl {
+			font-size: 13px !important;
+		}
+		.h_theme_2_cat_btn {
+			/* background: #D9D9D9 !important; */
+			border-radius: 9px !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 5px 12px !important;
+			/* color: #000 !important; */
+			margin-left: 0px !important;
+			margin-right: 5px !important;
+			margin-bottom: 10px !important;
+		}
+	}
+
+	@media(max-width:400px) {
+		.dapi_h_tabs button {
+			background: transparent !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 5px 0px !important;
+			margin-right: 24px !important;
+		}
+		.dapi_h_tabs button:nth-child(4) {
+			margin-right: 0px !important;
+		}
+		.dapi_h_tabs button:hover {
+			background: transparent !important;
+		}
+		.dapi_sign_img img {
+			height: 95px !important;
+			width: 95px !important;
+		}
+		.dapi-h_thm2_imgs {
+			float: left !important;
+		}
+		.dapi-h_thm2_imgs .active {
+			padding-left: 0px !important;
+		}
+		.divine__dh__date__nav.dapi-no-m {
+			margin-left: 0px !important;
+		}
+		.dapi-h_thm2_ltsec{
+			float: left !important;
+		}
+		.h_theme_2_h2 {
+			font-size: 22px !important;
+			font-weight: 700 !important;
+			margin-top: 14px !important;
+			margin-bottom: 8px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 0px !important;
+		}
+		.divine__dh__content_wrap.dapi-mtb-10.dapi-thm2_content_wrap p, .h_theme_2_content {
+			font-size: 16px !important;
+		}
+		.h_theme_2_content {
+			margin-top: 15px !important;
+		}
+		/* .dapi-h_thm2_rtsec {
+			margin-left: 0px !important;
+		} */
+		.h_theme_2_select {
+			margin-top: 14px !important;
+			background: transparent !important;
+			border: 1px solid black !important;
+			border-radius: 4px !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 6px !important;
+			width: 100% !important;
+		}
+		.dapi_thm2_cat_heading {
+			font-size: 20px !important;
+		}
+		.h_theme_2_cat_btn_square {
+			margin-right: 8px !important;
+			margin-bottom: 12px !important;
+		}
+		.h_theme_2_cat_btn_square:nth-child(3), .h_theme_2_cat_btn_square:nth-child(6) {
+			margin-right: 0px !important;
+		}
+		.h_theme_2_cat_btn_cnt {
+			border-bottom: 1px solid #ededed !important;
+			/* margin-top: 25px !important; */
+			padding-bottom: 9px !important;
+		}
+		.col-lg-12.col-md-12.col-sm-12.h_theme_2_cat_btn_cnt, .col-lg-12.col-md-12.col-sm-12.dapi_thm2-cat_btn_pb {
+			padding-left: 0px !important;
+		}
+		.h_theme_day_week_year, .h_theme_2_muted_ttl {
+			font-size: 13px !important;
+		}
+		.h_theme_2_cat_btn {
+			/* background: #D9D9D9 !important; */
+			border-radius: 9px !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 5px 12px !important;
+			/* color: #000 !important; */
+			margin-left: 0px !important;
+			margin-right: 5px !important;
+			margin-bottom: 10px !important;
+		}
+	}
+
+	@media(max-width:360px) {
+		.dapi_h_tabs button {
+			background: transparent !important;
+			font-size: 13px !important;
+			font-weight: 600 !important;
+			padding: 5px 0px !important;
+			margin-right: 24px !important;
+		}
+		.dapi_h_tabs button:nth-child(4) {
+			margin-right: 0px !important;
+		}
+		.dapi_h_tabs button:hover {
+			background: transparent !important;
+		}
+		.dapi_sign_img img {
+			height: 95px !important;
+			width: 95px !important;
+		}
+		.dapi-h_thm2_imgs {
+			float: left !important;
+		}
+		.dapi-h_thm2_imgs .active {
+			padding-left: 0px !important;
+		}
+		.divine__dh__date__nav.dapi-no-m {
+			margin-left: 0px !important;
+		}
+		.dapi-h_thm2_ltsec{
+			float: left !important;
+		}
+		.h_theme_2_h2 {
+			font-size: 22px !important;
+			font-weight: 700 !important;
+			margin-top: 14px !important;
+			margin-bottom: 8px !important;
+		}
+		.dapi-thm2_secright, .dapi-h_thm2_rtsec {
+			margin-left: 0px !important;
+		}
+		.divine__dh__content_wrap.dapi-mtb-10.dapi-thm2_content_wrap p, .h_theme_2_content {
+			font-size: 15px !important;
+		}
+		.h_theme_2_content {
+			margin-top: 15px !important;
+		}
+		/* .dapi-h_thm2_rtsec {
+			margin-left: 0px !important;
+		} */
+		.h_theme_2_select {
+			margin-top: 14px !important;
+			background: transparent !important;
+			border: 1px solid black !important;
+			border-radius: 4px !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			padding: 6px !important;
+			width: 100% !important;
+		}
+		.dapi_thm2_cat_heading {
+			font-size: 20px !important;
+		}
+		.h_theme_2_cat_btn_square {
+			margin-right: 1px !important;
+			margin-bottom: 12px !important;
+		}
+		.h_theme_2_cat_btn_square:nth-child(3), .h_theme_2_cat_btn_square:nth-child(6) {
+			margin-right: 0px !important;
+		}
+		.h_theme_2_cat_btn_cnt {
+			border-bottom: 1px solid #ededed !important;
+			margin-top: 25px !important;
+			padding-bottom: 9px !important;
+		}
+		.col-lg-12.col-md-12.col-sm-12.h_theme_2_cat_btn_cnt, .col-lg-12.col-md-12.col-sm-12.dapi_thm2-cat_btn_pb {
+			padding-left: 0px !important;
+		}
+		.h_theme_day_week_year, .h_theme_2_muted_ttl {
+			font-size: 13px !important;
+		}
+	}
+	/*===============================
+	========== Theme 2 End ==============
+	================================*/
+
+	@media only screen and (max-width: 700px) {
+		.divine-col {
+		   flex: 24.99% !important;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.divine-col {
+		   flex: 33.33% !important;
+		}
+		.divine__dh__date__nav{
+			margin-left: -16px !important;
+			margin-right: -20px !important;
+			display: flex;
+			justify-content: space-around !important;
+		}
+		.divine__dh__date__nav a{
+			margin-right: 0.25rem !important;
+			font-size: 20px;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		.divine-col {
+		   flex: 50% !important;
+		}
+	}
+	@media only screen and (max-width: 350px) {
+		.divine-col {
+		   flex: 50% !important;
+		}
+		.divine__dh__date__nav{
+			display: grid;
+		}
+		.divine__dh__date__nav a{
+			margin-bottom: 10px !important;
+		}
+	}
+	.divine__dh__content_wrap span {
+		color: var(--text-color) !important;
+	}
+	.divine__dh__content_wrap p {
+		color: var(--text-color) !important;
+		font-size: var(--font-size) !important;
+	}
+	.dapi-th2.h_theme_2_cat_btn_square svg{
+		height: 24px !important;
+		width: 100% !important;
+		margin-bottom: 3px !important;
+		display: inline-block !important;
+	}
+	.dapi-th2 svg{
+		height: 21px !important;
+		width: 24px !important;
+		margin-bottom: -4px !important;
+	}
+	.dapi-th1 svg{
+		margin-bottom: -4px !important;
+		height: 19px !important;
+		width: 24px !important;
+	}
+	.divine__dh__category__links path {
+		fill: var(--category-color) !important;
+	}
+/* End Daily Horoscope*/
+
+
+

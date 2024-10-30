@@ -1,0 +1,326 @@
+:root {
+    --text-color:#000;
+    --theme-color:#D652BD;
+    --category-color:#FFF;
+	--font-size: 13px;
+}
+/*
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+.divine__mr_1{
+	margin-right: .25rem!important;	
+}
+.divine__ml_1{
+	margin-left: .25rem!important;	
+}
+
+.divine__plugin__overlay {
+	background: rgba(0,0,0,0.2);
+	color: #000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: center;
+	padding-top: 20%;
+	opacity: 0.5;
+	font-size: 50px;
+	z-index: 100000;
+}
+
+/* Daily Horoscope*/
+	.divine__dh__widget{
+		font-size: var(--widget-font-size); 
+		border-radius: 20px;
+		/*padding-bottom: 25px;*/
+	    padding: 10px 10px 20px 10px;
+		margin: 2rem 0px;	
+       border: 1px solid #ededed;
+       box-shadow: none !important;
+	}
+
+	.divine__dh__title{
+		/*display: flex;*/
+		justify-content: space-between;
+	}
+	.divine__dch__name{
+    	text-align: center;
+	}
+    .divine__dch__date{
+    	margin: 0px !important;
+    	font-size: 22px;
+    	font-weight: 400 !important;
+    }
+    .divine__dh__select__sign .w3-bar-item{
+    	padding: 5px 10px !important;
+    	line-height: initial !important;
+    }
+	.divine__dh__horo__nav{
+		margin-top: 10px;
+		text-align: center;
+		/*background: var(--main-color);*/
+	}
+
+	/* Daily Weekly Monthly Tab*/
+	.divine__dh__horo__links {
+	    /**zoom: 1;*/
+	    padding: 10px 0px;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    text-align: center;
+	   /* background: #313131;*/
+	}
+
+
+	.divine__dh__horo__link__effect a {
+	    padding: 10px 0;
+	    margin: 0 12px;
+	    color: var(--text-color) !important;
+	    text-shadow: none;
+	    position: relative;
+	    font-size: 22px;
+	    letter-spacing: 1px;
+	    text-decoration: none !important;
+	}
+
+/*	.divine__dh__horo__link__effect a::before {
+	    position: absolute;
+	    top: 10px;
+	    left: 0;
+	    overflow: hidden;
+	    padding: 5px 0;
+	    max-width: 0;
+	    text-decoration: underline !important; 
+	    color: var(--theme-color);
+	    content: attr(data-hover);
+	    -webkit-transition: max-width 0.5s;
+	    -moz-transition: max-width 0.5s;
+	    transition: max-width 0.5s;
+	    line-height: 20px;
+	}*/
+
+	.divine__dh__horo__link__effect a:active,
+	.divine__dh__horo__link__effect a:focus,
+	.divine__dh__horo__link__effect a:hover,
+	.divine__dh__horo__link__effect a.active{
+	    text-decoration: underline !important; 
+	    border-radius: 0px !important;
+	    color: var(--theme-color) !important;
+	    padding-bottom: 1px !important;
+	    outline: none !important;
+	    background: none !important;
+	}
+
+	.divine__dh__horo__link__effect a:hover::before {
+	    max-width: 100%;
+	}
+	/* Daily Weekly Monthly Tab*/
+
+	.divine__dch__date__nav{
+		margin-top: 10px;
+		text-align: center;
+		/*background: var(--main-color);*/
+	}
+
+	.divine__dch__date__nav a{
+		color: var(--theme-color) !important; 
+		border: 1px solid var(--theme-color) !important;
+	    padding: 5px 10px !important;
+	    border-radius: 5px !important;
+	    text-decoration: none !important
+	}
+
+	.divine__dch__date__nav a.active{
+		color: var(--category-color) !important;
+		background: var(--theme-color) !important; 
+	}
+
+	.divine__dch__date__nav a:hover{
+		color: var(--category-color) !important;
+		background: var(--theme-color) !important; 
+	}
+
+	.divine__dh__category_tabs{
+		background-color: var(--theme-color);
+		box-shadow: 0 5px 20px 0 rgb(0 0 0 / 20%), 0 13px 24px -11px rgb(135 135 135 / 60%);
+		border-radius: 4px;
+		position: relative;
+		z-index: 99;
+		margin: 0 auto;
+		width: 97%;	
+	}
+	.divine__dh__category_tabs ul {
+		list-style-type: none !important;
+		margin: 0;
+		padding: 20px 10px;
+		overflow: hidden;
+	}
+
+	.divine__dh__category_tabs ul li{
+		float: left;
+	}
+	.divine__dh__category_tabs ul li::marker {
+	    content: none !important;
+	}
+	.divine__dh__category_tabs ul li a{
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 8px 12px;
+		text-decoration: none;
+		transition: 0.1s;
+		margin-bottom: 10px;
+		font-size: 12px;
+		color: var(--category-color) !important;
+	    text-decoration: none !important;
+	    outline: none !important;
+	}
+
+	.divine__dh__icon__comment {
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 18px;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.divine__dh__icon__comment:before {
+	    content: "\f27b";
+	}
+
+	.divine__dch__content_wrap{
+		margin-top: -50px;
+		background: transparent;
+		/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);*/
+		padding-top: 65px;
+		border-radius: 4px;
+	}
+	.divine__dch__content_wrap p{
+		color: var(--text-color) !important;
+		font-size: var(--font-size) !important;
+	}
+	.divine__dch__result__date{
+		margin-left: 16px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.divine__dch__content__data {
+		/* display: none; */
+		/* padding: 0px 16px; */
+		border-top: none;
+		color:black;
+		-webkit-animation: fadeEffect 1.25s;
+		animation: fadeEffect 1.25s;
+    	font-weight: bold;
+	}
+    .divine__dh__content__title{
+    	font-weight: bold;
+    }
+	.divine__dch__content__data p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 0.9rem;
+	}
+
+	a.divine__dh__category__links:hover, 
+	a.divine__dh__category__links.active {
+	    background-color: #000099;
+	    background-color: hsla(0,0%,100%,.2);
+	    transition: background-color .1s .1s;
+	    border-radius: 5px;
+	    text-decoration: none;
+	}
+
+	#chinese-horoscope .divine-col{
+		flex: 16.66% !important;
+		text-align: center;
+	}
+	.divine__dch__signbox{
+		/*padding: 10px;*/
+		margin-bottom: 10px;
+	}
+	
+	.divine__dch__sign{
+		display: grid;
+		justify-content: center;
+	    border-radius: 50%;
+	    font-size: 14px;
+	    align-content: center;
+	    padding: 10px;
+	    cursor: pointer;
+	    margin-left: auto;
+	    margin-right: auto;
+		color: var(--text-color) !important;
+		/*box-shadow: 0 4px 10px 0 rgb(0 0 0 / 5%), 0 4px 20px 0 rgb(0 0 0 / 8%);*/
+	}
+	.divine__dch__sign:hover,
+	.divine__dch__sign.active{
+	    /*border-radius: 50%;
+		box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 19%);*/
+		font-weight: bolder;
+	}
+
+	.divine__dch__sign img{
+		height: 80px !important;
+		width: 80px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.divine__dch__heading{
+		text-align: center !important;
+	}
+	@media only screen and (max-width: 700px) {
+		chinese-horoscope .divine-col {
+			flex: 24.99% !important;
+		}
+		.divine__dh__horo__links{
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+		.divine__dh__horo__link__effect a{
+			font-size: 20px;
+			margin: 0 5px;			
+		}
+		.divine__dch__date__nav{
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.divine__dch__date__nav a{
+			margin-bottom: 10px;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		#chinese-horoscope .divine-col {
+			flex: 33.33% !important;
+		}
+		.divine__dch__date__nav{
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+	}	
+	@media only screen and (max-width: 400px) {
+		#chinese-horoscope .divine-col {
+		   flex: 50% !important;
+		}
+	}
+	#chinese-horoscope .divine__dch__date{
+		color: var(--text-color) !important;
+	}
+	#chinese-horoscope .divine__dch__result__date{
+		color: var(--text-color) !important;
+	}
+	#chinese-horoscope .divine__dch__heading {
+		color: var(--text-color) !important;
+	}
+	

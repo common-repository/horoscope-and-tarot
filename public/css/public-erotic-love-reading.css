@@ -1,0 +1,271 @@
+:root {
+    --el-text-color:#000;
+    --el-theme-color:#D652BD;
+    --el-category-color:#FFF;
+	--el-font-size: 13px;
+}
+
+.divine__plugin__overlay {
+	background: rgba(0,0,0,0.2);
+	color: #000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: center;
+	padding-top: 20%;
+	opacity: 0.5;
+	font-size: 50px;
+	z-index: 100000;
+}
+
+/* Divine Angel Reading*/
+	.divine__ta__widget{
+		width: 100% !important;
+		border: 1px solid #ededed !important;
+		border-radius: 20px !important;
+		/*background: #eee !important;*/
+		margin: 2rem 0px !important;	
+		display: inline-block !important;
+	}
+
+	.divine__ta__widget h2:before{
+		display: none !important;
+	}
+	#erotic-love-reading  .divine__ta__cardname{
+		font-weight: 700 !important;
+		font-size: 19px !important;
+		margin-top: 20px !important;
+		color: var(--el-text-color) !important;
+	}
+	
+
+	.divine__ta__background{
+    	text-align: center !important;
+    	padding-left: 16px !important;
+    	margin-top: -10px !important;
+    }
+	.divine__ta__widget a:focus{
+	    outline: none !important;
+	    outline-style: none !important;
+	    text-decoration: none !important;	
+	}
+
+    .divine__ta__heading{
+		margin: 1rem auto !important;
+    	margin-top: 0.5rem !important;
+    	font-size: 20px !important;
+    	font-weight: 600 !important;
+    	text-align: center !important;
+		text-transform: capitalize;
+		
+    }
+
+	.divine__ta__subheading{
+		font-size: 18px !important;
+		text-align: center !important;
+		text-transform: uppercase !important;
+		letter-spacing: 3px !important;
+	}
+
+	.divine__ta__deck {
+		height: 800px;
+		overflow: hidden !important;
+		position: relative !important;
+	}
+
+	.divine__ta__deck .divine__ta__innnerdeck {
+		margin: 30px auto 0 !important;
+		width: 1530px !important;
+		position: relative !important;
+	}
+
+	.divine__ta__deck .divine__ta__innnerdeck .divine__ta__card {
+		background: url('../images/card.jpg') no-repeat top left !important;
+		border: none !important;
+		width: 398px;
+		height: 489px;
+		display: block !important;
+		position: absolute !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-webkit-transition: none !important;
+		transition: none !important;
+		box-shadow: none !important;
+	}
+
+	.divine__ta__deck .divine__ta__innnerdeck .divine__ta__card:hover {
+	    background-position: 0 -425px !important;
+	}
+
+	@media only screen and (min-width:0px) and (max-width:4000px) {
+		.divine__ta__deck {
+		    height: 360px;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck {
+			width: calc(100% - 300px) !important;
+			margin: 0 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .divine__ta__card {
+			-ms-transform: rotate(0deg) !important;
+			-webkit-transform: rotate(0deg) !important;
+			transform: rotate(0deg) !important;
+			top: 0 !important;
+			width: 300px;
+			height: 360px;
+			background-size: cover !important;
+		}
+
+		.divine__ta__deck .divine__ta__innnerdeck .card-1 {
+			left: 0% !important;
+			z-index: 12 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-2 {
+			left: 10% !important;
+			z-index: 11 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-3 {
+			left: 19% !important;
+			z-index: 10 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-4 {
+			left: 28% !important;
+			z-index: 9 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-5 {
+			left: 37% !important;
+			z-index: 8 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-6 {
+			left: 46% !important;
+			z-index: 7 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-7 {
+			left: 55% !important;
+			z-index: 6 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-8 {
+			left: 64% !important;
+			z-index: 5 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-9 {
+			left: 73% !important;
+			z-index: 4 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-10 {
+			left: 82% !important;
+			z-index: 3 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-11 {
+			left: 91% !important;
+			z-index: 2 !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .card-12 {
+			left: 100% !important;
+			z-index: 1 !important;
+		}
+		.tarot-content.suits {
+		    text-align: center !important;
+		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		.divine__ta__deck{
+			height: 300px;
+		}
+		.divine__ta__card{
+			height: 300px !important;
+			width: 250px !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck{
+		    width: calc(100% - 250px) !important;
+		}
+		.divine__ta__deck .divine__ta__innnerdeck .divine__ta__card:hover {
+		    background-position: 0 -355px !important;
+		}  
+		ul.widgetTA_tab li a{
+		    font-size: 10px !important;
+		}
+		.widgetTA_tab img{
+		    width: 16px !important;
+		}                   
+	}
+
+
+	
+	.divine__ta__tablink{
+	    display: flex !important;
+	}
+
+	.divine__ta__icon__comment {
+		display: inline-block !important;
+		font: normal normal normal 14px/1 FontAwesome !important;
+		font-size: 18px !important;
+		text-rendering: auto !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+	}
+
+	.divine__ta__icon__comment:before {
+	    content: "\f27b" !important;
+	}	
+
+	
+
+	.divine__ta__contentwrap{
+		margin-top: -50px !important;
+		background: transparent;
+		/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%) !important;*/
+		padding-top: 60px !important;
+		border-radius: 4px !important;
+	}
+	.divine__ta__contentdata {
+		display: none;
+		padding: 6px 16px !important;
+		border-top: none !important;
+		text-align: left !important;
+		-webkit-animation: fadeEffect 1.25s !important;
+		animation: fadeEffect 1.25s !important;
+	}	
+    
+ 
+	img.ta__card__image{
+	    margin-left: auto !important;
+	    margin-right: auto !important;
+		height: 18rem !important;
+	}
+
+
+	#erotic-love-reading .divine__ta__cardname h3{
+		color: var(--el-text-color) !important;
+	}
+	#erotic-love-reading .divine__ta__contentdata p{
+	    /* font-size: 0.9rem !important;     */
+	    margin-top: 10px !important;
+        margin-bottom: 1em !important;
+		color: var(--el-text-color) !important;
+		font-size: var(--el-font-size) !important;
+	} 
+    
+	#erotic-love-reading .divine__ta__changecard__btn{
+		color: var(--el-category-color) !important;
+		background-color: var(--el-theme-color) !important;
+		border-color: var(--el-theme-color) !important;
+		padding: .375rem .75rem !important;
+		font-size: 16px !important;
+		line-height: 1.5 !important;
+		border-radius: .25rem !important;
+	}  
+	#erotic-love-reading button.divine__ta__changecard__btn:hover {
+		background-color: var(--el-theme-color) !important;
+		color: var(--el-category-color) !important;
+		filter: brightness(110%) !important;
+	}
+	#erotic-love-reading .divine__ta__heading {
+		color: var(--el-text-color) !important;
+	}
+	#erotic-love-reading .divine__ta__subheading {
+		color: var(--el-text-color) !important;
+	}

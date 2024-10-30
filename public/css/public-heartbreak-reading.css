@@ -1,0 +1,160 @@
+:root {
+    --hr-text-color:#000;
+    --hr-theme-color:#D652BD;
+    --hr-category-color:#FFF;
+	--hr-font-size: 13px;
+}
+
+.divine__plugin__overlay {
+	background: rgba(0,0,0,0.2);
+	color: #000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: center;
+	padding-top: 20%;
+	opacity: 0.5;
+	font-size: 50px;
+	z-index: 100000;
+}
+
+
+	.divine__ta__widget{
+		width: 100% !important;
+		border: 1px solid #ededed !important;
+		border-radius: 20px !important;
+		/*background: #eee !important;*/
+		margin: 2rem 0px !important;	
+		display: inline-block !important;
+	}
+
+	.divine__ta__widget h2:before{
+		display: none !important;
+	}
+	#heartbreak-reading .divine__ta__cardname{
+		font-weight: 700 !important;
+		font-size: 19px !important;
+		margin-top: 20px !important;
+		color: var(--hr-text-color) !important;
+	}
+	#heartbreak-reading .divine__ta__cardname h3{
+		color: var(--hr-text-color) !important;
+	}
+	.divine__ta__widget a:focus{
+	    outline: none !important;
+	    outline-style: none !important;
+	    text-decoration: none !important;	
+	}
+
+	.divine__ta__deck {
+		height: 800px;
+		overflow: hidden !important;
+	}
+
+	.divine__ta__deck .divine__ta__innnerdeck {
+		margin: 30px auto 0 !important;
+		width: 100% !important;
+		position: relative !important;
+		margin: 0 auto !important;
+		text-align: center;
+	}
+
+	.divine__ta__icon__comment:before {
+	    content: "\f27b" !important;
+	}	
+
+	
+
+	.divine__ta__contentwrap{
+		margin-top: -50px !important;
+		background: transparent;
+		/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%) !important;*/
+		padding-top: 60px !important;
+		border-radius: 4px !important;
+	}
+	#heartbreak-reading .divine__ta__contentdata {
+		display: none;
+		padding: 6px 16px !important;
+		border-top: none !important;
+		text-align: center !important;
+		-webkit-animation: fadeEffect 1.25s !important;
+		animation: fadeEffect 1.25s !important;
+	}	
+    
+	#heartbreak-reading .divine__ta__contentdata p{
+	    /* font-size: 0.9rem !important;     */
+	    margin-top: 10px !important;
+        margin-bottom: 1em !important;
+		color: var(--hr-text-color) !important;
+		font-size: var(--hr-font-size) !important;
+	} 
+    #heartbreak-reading .divine__ta__background{
+    	text-align: center !important;
+    	padding-left: 16px !important;
+    	margin-top: 25px !important;
+    }
+	#heartbreak-reading .divine__ta__heading {
+		color: var(--hr-text-color) !important;
+		margin: 1rem auto !important;
+    	margin-top: 0.5rem !important;
+    	font-size: 20px !important;
+    	font-weight: 600 !important;
+    	text-align: center !important;
+		text-transform: capitalize;
+	}
+	#heartbreak-reading .divine__ta__subheading {
+		color: var(--hr-text-color) !important;
+		font-size: 18px !important;
+		text-align: center !important;
+		text-transform: uppercase !important;
+		letter-spacing: 3px !important;
+	}
+	#heartbreak-reading .divine__ta__changecard__btn{
+		color: var(--hr-category-color) !important;
+		background-color: var(--hr-theme-color) !important;
+		border-color: var(--hr-theme-color) !important;
+		padding: .375rem .75rem !important;
+		font-size: 16px !important;
+		line-height: 1.5 !important;
+		border-radius: .25rem !important;
+	}  
+	#heartbreak-reading  button.divine__ta__changecard__btn:hover {
+		background-color: var(--hr-theme-color) !important;
+		color: var(--hr-category-color) !important;
+		filter: brightness(110%) !important;
+	} 
+	img.ta__card__image{
+	    margin-left: auto !important;
+	    margin-right: auto !important;
+		height: 18rem !important;
+	}
+
+	.center-cards {
+		align-items: center;
+	}
+	.flex-center-inline {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	@media only screen and (min-width: 0px) and (max-width: 767px){
+		.tarot-deck .center-cards>* {
+			width: auto !important;
+			max-height: 10rem !important;
+		}
+	}
+	@media only screen and (min-width: 0px) and (max-width: 767px){
+		.center-cards>* {
+			max-width: 6rem !important;
+		}
+	}
+	.center-cards>* {
+		display: block !important;
+		max-width: 10rem !important;
+		height: auto !important;
+		margin: 1rem 0.5rem !important;
+		cursor: pointer !important;
+	}

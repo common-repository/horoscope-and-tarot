@@ -1,0 +1,584 @@
+:root {
+  --background_color: #BADAAB;
+  --primary_festival_badge: #E09D40;
+  --secondary_festival_badge: #CA90EE;
+  --festival_loader: #6052BE;
+}
+
+/* Bootstrap */
+.fapicol-sm-6,
+.fapicol-sm-12,
+.fapicol-md-6,
+.fapicol-md-12,
+.fapicol-lg-3,
+.fapicol-lg-6,
+.fapicol-lg-12 {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 1px !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.fapidivine-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+}
+
+@media (min-width: 576px) {
+
+  .fapicol-sm-3 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 25% !important;
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    /* padding: 0 !important; */
+  }
+
+  .fapicol-sm-6 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding: 0 !important;
+  }
+
+  .fapicol-sm-12 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .fapicol-md-3 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 25% !important;
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+
+  .fapicol-md-6 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .fapicol-md-12 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .fapicol-lg-6 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .fapicol-lg-12 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+}
+
+/* End Bootstrap */
+
+.fapi-calender {
+  width: 100% !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  margin-top: 20px !important;
+}
+
+.fapi-calender table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  table-layout: fixed !important;
+}
+
+.fapi-calender th {
+  border: 1px solid gray !important;
+  padding: 5px !important;
+  text-align: left !important;
+  font-weight: 500 !important;
+}
+
+.fapi-calender td {
+  border: 1px solid gray;
+  padding: 2px !important;
+  height: 80px !important;
+  text-align: left !important;
+  vertical-align: top !important;
+  /* width: calc(100/7); */
+}
+
+.fapi-calender td .date {
+  padding: 2px !important;
+  font-weight: bold !important;
+  text-align: left !important;
+}
+
+.fapidate {
+  cursor: pointer !important;
+  text-align: left !important;
+  font-weight: normal !important;
+  padding-left: 5px !important;
+  font-size: 14px !important;
+}
+
+.fapidate:focus {
+  background-color: lightgray !important;
+}
+
+select {
+  /* styling */
+  background-color: white !important;
+  border: thin solid blue !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+  font: inherit !important;
+  line-height: 1.5em !important;
+  padding: 0.5em 3.5em 0.5em 1em !important;
+
+  /* reset */
+  margin: 0 !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+select.fapiminimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc0, #ccc0) 
+    !important;
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em !important;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em !important;
+  background-repeat: no-repeat !important;
+}
+
+select.fapiminimal:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc0, #ccc0) !important;
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em !important;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat !important;
+  border-color: green !important;
+  outline: 0 !important;
+}
+
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+}
+
+.fapicell-data-item:nth-child(odd) {
+  margin-bottom: 3px !important;
+  border-radius: 3px !important;
+  background-color: var(--primary_festival_badge) !important;
+  white-space: nowrap !important;
+  font-size: 10px !important;
+  /* margin-right: 1em !important; */
+  overflow: hidden !important;
+  color: #000 !important;
+  margin: 0 0 2px 0 !important;
+  padding: 0 !important;
+}
+
+.fapicell-data-item:nth-child(even) {
+  margin-bottom: 3px !important;
+  border-radius: 3px !important;
+  background-color: var(--secondary_festival_badge) !important;
+  /* white-space: nowrap !important; */
+  font-size: 10px !important;
+  /* margin-right: 1em !important; */
+  overflow: hidden !important;
+  color: #000 !important;
+  margin: 0 0 2px 0 !important;
+  padding: 0 !important;
+}
+
+@media(max-width:576px) {
+
+  .fapicol-sm-3 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 25% !important;
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    /* padding: 0 !important; */
+  }
+
+  .fapicol-sm-6 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding: 1px !important;
+  }
+
+  .fapicol-sm-12 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+
+  .fapicol-lg-6 .fapicol-md-6 .fapicol-sm-6 {
+    /* padding: 0 !important; */
+  }
+
+  ul {
+    list-style: none !important;
+  }
+
+  .fapidate {
+    text-align: center !important;
+  }
+
+  .fapi-calender td {
+    border: none !important;
+    /* padding: 5px; */
+    height: auto !important;
+    text-align: center !important;
+    /* vertical-align: center; */
+    font-weight: bold !important;
+    /* width: calc(100/7); */
+    text-align: center !important;
+  }
+
+  .fapi-calender td>ul {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+
+  .fapi-calender td>ul li {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+
+  .fapi-calender th {
+    border: none !important;
+    padding: 5px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    padding-bottom: 22px !important;
+  }
+
+  .fapicell-data {
+    list-style-type: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    font-weight: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .fapicell-data-item:nth-child(odd) {
+    /* margin-right: 2px; */
+    padding: 1px !important;
+    border-radius: 50% !important;
+    border-color: 3px solid rgb(224, 157, 64) !important;
+    white-space: nowrap !important;
+    font-size: 4px !important;
+    color: transparent !important;
+    width: 2em !important;
+    content: "" !important;
+    content-visibility: hidden !important;
+    margin: 0 0 2px 0 !important;
+    padding: 0 !important;
+  }
+
+  .fapicell-data-item:nth-child(even) {
+    padding: 1px !important;
+    border-radius: 50% !important;
+    border-color: 3px solid rgb(202, 144, 238) !important;
+    font-size: 0.0px !important;
+    font-size: 4px !important;
+    color: transparent !important;
+    width: 2em !important;
+    content: "" !important;
+    content-visibility: hidden !important;
+    margin: 0 0 2px 0 !important;
+    padding: 0 !important;
+  }
+
+
+  .fapicell-data-item {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .fapicell-data-item {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .fapicell-data-item:first-child {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .fapi-calender td ul li {
+    text-align: auto !important;
+  }
+
+  .fapimenu {
+    position: relative !important;
+    display: block !important;
+    /* width: 2em !important; */
+    height: 2em !important;
+    border-radius: 50% !important;
+    color: #fff !important;
+    background: #000 !important;
+    float: left !important;
+    /* use this */
+  }
+
+  .fapidata-list {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .fapidata-list li {
+    font-weight: bold !important;
+  }
+
+  .fapidata-list p {
+    font-weight: normal !important;
+  }
+}
+
+.fapidata-list {
+  list-style-type: none !important;
+  padding: 0 !important;
+}
+
+.fapidata-list li {
+  font-weight: bold !important;
+}
+
+.fapidata-list p {
+  font-weight: normal !important;
+}
+
+.fapidata-item:nth-child(odd) {
+  margin-bottom: 5px !important;
+  border-left: 7px solid var(--primary_festival_badge) !important;
+  padding: 3px !important;
+  padding-left: 10px !important;
+
+}
+
+.fapidata-item:nth-child(even) {
+  margin-bottom: 5px !important;
+  border-left: 7px solid var(--secondary_festival_badge) !important;
+  padding: 3px !important;
+  padding-left: 10px !important;
+}
+
+
+.fapi-message{
+  padding-top: 10px !important;
+  display: none;
+}
+.fapi-message p{
+  font-size: 14px !important;
+}
+.fapi-data p{
+  font-size: 18px !important;
+}
+.fapi-data h4{
+  font-size: 19px;
+  padding-bottom: 5px;
+}
+
+.fapicell-data {
+  list-style-type: none !important;
+  padding: 3px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+}
+
+.dapi-form-control {
+  /* padding: 0 !important; */
+  font-size: 12px !important;
+}
+
+.dapi-form-control {
+  width: 100% !important;
+  padding: 8px 20px !important;
+  margin: 8px 0 4px !important;
+  display: inline-block !important;
+  border: 1px solid #000 !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+  color: #000 !important;
+  min-height: unset !important;
+}
+
+.fapimenu {
+  position: relative !important;
+  display: block !important;
+  /* width: 2em !important; */
+  /* height: 2em !important; */
+  border-radius: 50% !important;
+  color: #fff !important;
+  background: #000 !important;
+  /* float: left !important; */
+  /* use this */
+  padding: 1px !important;
+}
+
+.fapi-calender td ul li {
+  text-align: center !important;
+}
+
+svg {
+  width: 100% !important;
+  transform-origin: center !important;
+  animation: rotate4 2s linear infinite !important;
+  opacity: 1 !important;
+}
+
+circle {
+  fill: none !important;
+  stroke: hsl(214, 97%, 59%) !important;
+  stroke-width: 2 !important;
+  stroke-dasharray: 1, 200 !important;
+  stroke-dashoffset: 0 !important;
+  stroke-linecap: round !important;
+  animation: dash4 1.5s ease-in-out infinite !important;
+}
+
+@keyframes rotate4 {
+  100% {
+    transform: rotate(360deg) !important;
+  }
+}
+
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1, 200 !important;
+    stroke-dashoffset: 0 !important;
+  }
+
+  50% {
+    stroke-dasharray: 90, 200 !important;
+    stroke-dashoffset: -35px !important;
+  }
+
+  100% {
+    stroke-dashoffset: -125px !important;
+  }
+
+}
+
+.fapidata-item > p {
+  margin: 0 !important;
+ }
+.fapidata-item img{
+  height: 24px !important;
+  padding-right: 6px;
+}
+.fapidivcal {
+  background-color: #fff !important;
+  padding-bottom: 20px !important;
+}
+
+.fapipad5{
+  padding-right: 8px !important;
+}
+
+#fapi-maindiv{
+  width: 100% !important;
+  border: 1px solid var(--background_color) !important;
+  border-radius: 25px !important;
+  background: var(--background_color) !important;
+}
+#fapi-subdiv{
+  /* margin: 5% 6% !important; */
+  width: 90% !important;
+  margin: 5% auto !important;
+}
+#festive-auth p{
+  margin: 0 !important;
+  padding: 8px !important;
+}
+#fapiloader
+{
+  /* padding-top: 45px !important; */
+  margin-top: 5% !important;
+}
+#fapiloader div{
+  margin: auto;
+}
+
+.dapi-sp {
+	width: 24px !important;
+	height: 24px !important;
+	clear: both !important;
+	margin: 20px auto !important;
+}
+
+
+/* Spinner Circle Rotation */
+.sp-ldr-fes {
+	border: 4px solid var(--festival_loader) !important;
+	border-top: 4px solid var(--background_color) !important;
+	border-radius: 50% !important;
+	-webkit-animation: spCircRot .6s infinite linear !important;
+	animation: spCircRot .6s infinite linear !important;
+}
+
+@-webkit-keyframes spCircRot {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spCircRot {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(359deg); }
+}
